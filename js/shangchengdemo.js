@@ -1,4 +1,11 @@
 $(document).ready(function(){
+	loadJson();
+	// setInterval(function(){
+	// 	loadJson();
+	// },1000);
+	
+});
+function loadJson(){
 	$.ajax({
 			url:"../json/shangchengdemo.json",
 			type:"GET",
@@ -12,10 +19,13 @@ $(document).ready(function(){
 					makeHuoDong(huodong,huodong.length);
 					$('.huodong>.num>span').eq(0).addClass('active');
 					action();
+					$('div.youhuiquan .body').empty();
 					$.each(youhui,function(i){
 						makeYouHui(this.tupian,this.text,this.num);
 					});
-				
+	// 				setInterval(function(){
+	// 	loadJson();
+	// },1000);
 				
 			},
 			
@@ -23,30 +33,32 @@ $(document).ready(function(){
 				alert('fail');
 				console.log(error);
 			}
-});
-	
-});
+	});
+}
 function makeTitle(pageTitle){
 	var strHtml='<span class="title">'+pageTitle+'</span>';
-	$('div.head').append(strHtml);
+	$('div.head').empty();
+	$('div.head').html(strHtml);
 };
 
 function makeHuoDong(huodong,length){
+	$('div.guanggao').empty();
 	var strHtml='<div class="huodong" ><ul class="tupian"><li><img src='+huodong[0]+'></li><li><img src='
 	+huodong[1]+'></li></ul><div class="num">';
 	for(var i=1;i<=length;i++){
 		strHtml=strHtml+'<span >'+i+'</span>';
 		// console.log(i);
 	}
-	strHtml=strHtml+'</div>'+'</div>';
-	$('div.guanggao').append(strHtml);
+	strHtml=strHtml+'</div>'+'</div>';	
+	$('div.guanggao').html(strHtml);
 
 
 }
 function makeYouHui(tupian,text,num){
-	var optionHtml='<div class="item"><div class="tupian"><img src='+tupian+'></div><div class="content"><p class="decoration>'+
+	var optionHtml='<div class="item"><div class="tupian"><img src='+tupian+'></div><div class="content"><p class="decoration">'+
 	text+'</p><p class="reference">免费领取</p><p class="num">已领'+num+'张</p></div></div>';
-	$('div.youhuiquan').append(optionHtml);
+	
+	$('div.youhuiquan .body').append(optionHtml);
 
 
 }
