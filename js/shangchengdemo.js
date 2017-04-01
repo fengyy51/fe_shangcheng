@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	// document.title="title";
+	
 	loadJson();
 	// setInterval(function(){
 	// 	loadJson();
@@ -14,15 +16,22 @@ function loadJson(){
 				
 					var title=data.data.title;
 					var huodong=data.data.huodong;
+					var gonggao=data.data.gonggao;
 					var youhui=data.data.youhui;
-					makeTitle(title);
+					// makeTitle(title);
 					makeHuoDong(huodong,huodong.length);
 					$('.huodong>.num>span').eq(0).addClass('active');
-					action();
+					// console.log(gonggao);
+						makeGongGao(gonggao);
+			
+					
+
 					$('div.youhuiquan .body').empty();
 					$.each(youhui,function(i){
 						makeYouHui(this.tupian,this.text,this.num);
 					});
+					actionGonggao();
+
 	// 				setInterval(function(){
 	// 	loadJson();
 	// },1000);
@@ -36,9 +45,12 @@ function loadJson(){
 	});
 }
 function makeTitle(pageTitle){
-	var strHtml='<span class="title">'+pageTitle+'</span>';
-	$('div.head').empty();
-	$('div.head').html(strHtml);
+	// var strHtml='<span class="title">'+pageTitle+'</span>';
+	var strHtml=pageTitle;
+	$(document).attr('title',strHtml);
+	// console.log(strHtml);
+	// $('head title').empty();
+	// $('head title').html(strHtml);
 };
 
 function makeHuoDong(huodong,length){
@@ -51,8 +63,34 @@ function makeHuoDong(huodong,length){
 	}
 	strHtml=strHtml+'</div>'+'</div>';	
 	$('div.guanggao').html(strHtml);
+	actionHuoDong();
 
-
+}
+function makeGongGao(gonggao) {
+	var flagGongGao=false;
+	var i=0;
+	var strHtml='<span class="text"><span class="red">'+gonggao[0].decoration+'  </span><span class="content">'
+				+gonggao[0].text+'</span></span>'+'';
+	$('div.gonggao ').append(strHtml);
+	setInterval(function(){
+			if(i==gonggao.length)
+				i=0;
+		
+			// $('div.gonggao span.red').next().empty();
+			var strHtml='<span class="text"><span class="red">'+gonggao[i].decoration+'</span><span class="content">'
+				+gonggao[i].text+'</span></span>'+'';
+			$('div.gonggao span.text').empty();
+			console.log(strHtml);
+			i++;
+			$('div.gonggao ').append(strHtml);
+				
+				
+			
+		},4000);
+	// },200000);
+	
+	
+	
 }
 function makeYouHui(tupian,text,num){
 	var optionHtml='<div class="item"><div class="tupian"><img src='+tupian+'></div><div class="content"><p class="decoration">'+
@@ -63,7 +101,7 @@ function makeYouHui(tupian,text,num){
 
 }
 //滚动 加手动显示广告
-function action(){
+function actionHuoDong(){
 	var $huodong=$('div.guanggao div.huodong');
 	var ul=$('div.guanggao div.huodong ul');
 	var $num=$huodong.find('.num span');
@@ -95,14 +133,46 @@ function action(){
 	}
 	autoplay();
 	//触摸悬停
-	$('div.guanggao').delegate("ul","ontouchstart",function(){
-		alert("fa");
-			clearInterval(timer);
-			
-	
+	$('div.guanggao').delegate("ul","touchstart",function(){
+		clearInterval(timer);
 	});
-	$('div.guanggao').on("pointer","ul",function(){
+	$('div.guanggao').delegate("ul","touchend",function(){
 		autoplay();
 	});
-	
+	//拖拽切换图片
+	$(".huodong").hover(function () {
+            $("#btn_prev,#btn_next").fadeIn()
+        }, function () {
+            $("#btn_prev,#btn_next").fadeOut()
+        });
+
+        $dragBln = false;
+
+        $(".huodong .tupian").touchSlider({
+            flexible: true,
+            speed: 200,
+            btn_prev: $("#btn_prev"),
+            btn_next: $("#btn_next"),
+            paging: $(".num span"),
+            counter: function (e) {
+                $(".num span").removeClass("active").eq(e.current - 1).addClass("active");
+            }
+        });
+
+        $(".huodong .tupian").bind("dragstart", function () {
+            $dragBln = true;
+        });
+
+        $(".huodong .tupian ").click(function () {
+            if ($dragBln) {
+                return false;
+            }
+        });
+}
+
+function actionGonggao() {
+	var timer=null;
+	timer=setInterval(function(){
+
+	},2000)
 }

@@ -2,12 +2,13 @@ body{
 	background-color: #E3E5E6;
 }
 html,body{
-	font-size: 0.15rem;
+	min-height: 100%;
+	font-size: 18px;
 	margin: 0;
 	padding: 0;
 	min-width: 100%;
 }
-div.head{
+/* div.head{
 
 	color: #fff;
 	font-family: Microsoft YaHei;
@@ -20,7 +21,7 @@ div.head{
 div.head span{
 	margin: 0 25% 25%;
 	
-}
+} */
 
 div.huodong{
 	height: 160px;
@@ -64,43 +65,62 @@ div.huodong div.num span.active{
 	background-color: #28AFF2;
 	font-weight: bold;
 } 
-div.youhuiquan {
-	width: 100%;
-	height: 300px;	
+
+div.white{
+	width: 100%;	
+	background-color:#fff;
 	margin: 2px 0 2px 0;
-	background-color: #fff;
+}
+div.gonggao{	
+	height: 25px; 	
+}
+div.gonggao span.bold{
+	font-weight: bold;
+	font-family: DFKai-SB;
+}
+div.gonggao span.red{
+	color: #FC3D50;	
+}
+div.gonggao span.shenred{
+	color: #FF2204;
+}
+div.gonggao span.text{
+	font-size: 15px;
+}
+div.youhuiquan {
+	
+	margin: 2px 0 2px 0;
 }
 div.youhuiquan #head{
 	text-decoration: underline;
 	border: 1px solid #FAF1F1;
-	height: 31px;
+	height: 34px;
 }
-.left{
-  	
+.left{  	
  	float: left;
  	margin:  5px 0 5px 0; 
 }
 .right{
- 	margin:  5px 0 5px 0; 	
+	/* position: absolute;
+	right: 20px; */
  	float: right;
 }
 div.item{
 	width: 100%;
-	height: 85px;
+	height: 130px;
 	margin: 7px 0 5px 0;
 	border-bottom: 1px solid #FAF1F1;
-	background-color: #fff;
 }
 
 div.item .tupian img{
-	height: 85px;
-	width: 100px;
+	height: 130px;
+	width: 120px;
 	float: left;
 	display: block;
 }
 div.item .content{
-	width: 275px;
-	height: 85px;
+	width: 245px;
+	height: 130px;
 	float: right;
 }
 div.item .content p.decoration{
@@ -112,7 +132,8 @@ div.item .content p.reference{
 }
 div.item .content p.num{
 	margin-top: 10px;
-	margin-left: 210px;
-	font-size: 0.1rem;
+	position: absolute;
+	right: 20px;
+	font-size: 15px;
 	
 }
