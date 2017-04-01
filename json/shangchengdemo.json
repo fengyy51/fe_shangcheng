@@ -10,6 +10,10 @@
 				{"decoration":"热","text":"买MacBook送耳机"},
 				{"decoration":"值","text":"佳能旗舰新机，12期白条免息"},
 				{"decoration":"新","text":"值了，这双鞋爆卖"},
-				{"decoration":"热","text":"超值甩卖短裙"}]
+				{"decoration":"热","text":"超值甩卖短裙"}],
+		"shangpin":[{"tupian":"../resource/img/shangpinone.jpg","decoration":"韩版显瘦连衣裙打底百褶裙中长款","money":"￥148.00"},
+					{"tupian":"../resource/img/shangpintwo.jpg","decoration":"时尚显瘦连衣裙打底百褶裙中长款","money":"￥112.00"},
+					{"tupian":"../resource/img/shangpinthree.jpg","decoration":"印花显瘦连衣裙打底百褶裙中长款","money":"￥158.00"},
+					{"tupian":"../resource/img/shangpinfour.jpg","decoration":"大牌显瘦连衣裙打底百褶裙中长款","money":"￥136.00"}]
 	}
 }

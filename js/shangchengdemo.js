@@ -17,24 +17,20 @@ function loadJson(){
 					var title=data.data.title;
 					var huodong=data.data.huodong;
 					var gonggao=data.data.gonggao;
+					var shangpin=data.data.shangpin;
 					var youhui=data.data.youhui;
 					// makeTitle(title);
 					makeHuoDong(huodong,huodong.length);
 					$('.huodong>.num>span').eq(0).addClass('active');
-					// console.log(gonggao);
-						makeGongGao(gonggao);
-			
-					
+					makeGongGao(gonggao);
+					makeShangPin(shangpin);				
 
 					$('div.youhuiquan .body').empty();
 					$.each(youhui,function(i){
 						makeYouHui(this.tupian,this.text,this.num);
 					});
-					actionGonggao();
+					
 
-	// 				setInterval(function(){
-	// 	loadJson();
-	// },1000);
 				
 			},
 			
@@ -82,15 +78,24 @@ function makeGongGao(gonggao) {
 			$('div.gonggao span.text').empty();
 			console.log(strHtml);
 			i++;
-			$('div.gonggao ').append(strHtml);
-				
-				
-			
+			$('div.gonggao ').append(strHtml);		
+		
 		},4000);
-	// },200000);
 	
-	
-	
+}
+function makeShangPin(shangpin) {
+	var strHtml='<div class="twocolom">';
+	$.each(shangpin,function(i){
+		if(i%2==0){
+			strHtml=strHtml+'<div class="colom"><div class="colomitem">'+'<div class="tupian"><img src='+this.tupian+'></div><div class="content"><p class="decoration">'+
+				this.decoration+'</p><p class="money">'+this.money+'</p></div></div>';
+		}
+		else{
+		strHtml=strHtml+'<div class="colomitem"><div class="tupian"><img src='+this.tupian+'></div><div class="content"><p class="decoration">'+
+				this.decoration+'</p><p class="money">'+this.money+'</p></div></div></div>';
+		}
+	});
+	$('div.shangpin .body').html(strHtml);
 }
 function makeYouHui(tupian,text,num){
 	var optionHtml='<div class="item"><div class="tupian"><img src='+tupian+'></div><div class="content"><p class="decoration">'+
@@ -168,11 +173,4 @@ function actionHuoDong(){
                 return false;
             }
         });
-}
-
-function actionGonggao() {
-	var timer=null;
-	timer=setInterval(function(){
-
-	},2000)
 }

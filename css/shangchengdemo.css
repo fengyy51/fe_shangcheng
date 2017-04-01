@@ -91,7 +91,7 @@ div.youhuiquan {
 	
 	margin: 2px 0 2px 0;
 }
-div.youhuiquan #head{
+ #head{
 	text-decoration: underline;
 	border: 1px solid #FAF1F1;
 	height: 34px;
@@ -105,6 +105,40 @@ div.youhuiquan #head{
 	right: 20px; */
  	float: right;
 }
+div.shangpin{
+	height: 480px;
+}
+/* 成两列排列的格式 */
+div.twocolom div.colom{
+	margin-bottom: 0;
+	height: 222px;
+	width: 100%;
+
+	/* border: 1px solid #FAF1F1; */
+}
+div.twocolom div.colomitem {
+	/* border: 1px solid black; */
+	border: 1px solid #FAF1F1;
+}
+div.colomitem:nth-child(0){
+/* 	position: relative; */
+/* 	float: left;	 */
+	width:180px;
+	/* background:#ff0000;
+	border: 1px solid black; */
+}
+div.colomitem:nth-child(1){
+	float: right;
+	/* background:#0000ff; */
+	width:180px;
+	/* border: 1px solid red; */
+}
+div.colom .tupian img{
+	width: 180px;
+	height: 130px;
+
+}
+/* //成一列排列的格式 */
 div.item{
 	width: 100%;
 	height: 130px;
