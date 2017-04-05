@@ -66,8 +66,8 @@
 			this._speed = this.opts.speed;
 			this._tg = $(this);
 			// this._list = this._tg.children().children();
-			this._list=this._tg.find("img");
-			
+			this._list=this._tg.find('.row');
+
 			this._width = parseInt(this._tg.css("width"));
 			this._item_w = parseInt(this._list.css("width"));
 

@@ -33,7 +33,7 @@ div.huodong{
 div.huodong ul{
 	list-style: none;
 	position: relative;
-	width: 800px;
+	width: 2000px;
 }
 div.huodong ul li{
 	float: left;
@@ -46,7 +46,7 @@ div.huodong ul li img{
 div.huodong div.num {
 	position: absolute;
 	bottom: 0.16rem;
-	right: 0.04rem;
+	left: 15rem;
 	
 	line-height: 20px;
 }
@@ -138,6 +138,7 @@ div.colom .tupian img{
 	height: 180px;
 
 }
+
 /* //成一列排列的格式 */
 div.item{
 	width: 100%;
@@ -170,4 +171,29 @@ div.item .content p.num{
 	right: 20px;
 	font-size: 15px;
 	
+}
+/*明星店铺一行左右触摸切换*/
+div.mingxingdianpu{
+	position: relative;
+	width: 375px;
+	height: 233px;
+	
+	overflow: hidden;
+}
+div.container{	
+	position: relative;
+	width: 1170px;
+	height: 179px;
+	
+}
+ div.row{
+ 	
+	width: 130px;
+	height: 179px;
+	float: left;
+}
+div.row .tupian img{
+	height: 130px;
+	width: 120px;	
+	display: block;
 }

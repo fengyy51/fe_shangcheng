@@ -1,23 +1,38 @@
 {
-	"data":{
-		"title":"义乌购物中心",
-		"huodong":["../resource/img/huodong.jpg","../resource/img/huodongone.jpg","../resource/img/huodongtwo.jpg","../resource/img/huodongthree.jpg"],
-		"youhui":[{"tupian":"../resource/img/dianpu.jpg","text":"海澜之家优惠活动兑换券","num":3},
-				{"tupian":"../resource/img/dianpuone.jpg","text":"唐诗优惠活动兑换券","num":5},
-				{"tupian":"../resource/img/chaozhitwo.jpg","text":"SEEO优惠活动兑换券","num":8}
-		],
-		"gonggao":[{"decoration":"荐","text":"值了！这张3期分期优惠券免费"},
-				{"decoration":"热","text":"买MacBook送耳机"},
-				{"decoration":"值","text":"佳能旗舰新机，12期白条免息"},
-				{"decoration":"新","text":"值了，这双鞋爆卖"},
-				{"decoration":"热","text":"超值甩卖短裙"}],
-		"shangpin":[{"tupian":"../resource/img/shangpinone.jpg","decoration":"韩版显瘦连衣裙打底百褶裙中长款","money":"￥148.00"},
-					{"tupian":"../resource/img/shangpintwo.jpg","decoration":"时尚显瘦连衣裙打底百褶裙中长款","money":"￥112.00"},
-					{"tupian":"../resource/img/shangpinthree.jpg","decoration":"印花显瘦连衣裙打底百褶裙中长款","money":"￥158.00"},
-					{"tupian":"../resource/img/shangpinfour.jpg","decoration":"大牌显瘦连衣裙打底百褶裙中长款","money":"￥136.00"}],
-		"youhuishangpin":[{"tupian":"../resource/img/shangpinone.jpg","decoration":"韩版显瘦连衣裙打底百褶裙中长款","money":"￥148.00"},
-					{"tupian":"../resource/img/shangpintwo.jpg","decoration":"时尚显瘦连衣裙打底百褶裙中长款","money":"￥112.00"},
-					{"tupian":"../resource/img/shangpinthree.jpg","decoration":"印花显瘦连衣裙打底百褶裙中长款","money":"￥158.00"},
-					{"tupian":"../resource/img/shangpinfour.jpg","decoration":"大牌显瘦连衣裙打底百褶裙中长款","money":"￥136.00"}]
-	}
+    "data": {
+        "title": "义乌购物中心",
+        "huodong": ["../resource/img/huodong.jpg", "../resource/img/huodongone.jpg", "../resource/img/huodongtwo.jpg", "../resource/img/huodongthree.jpg"],
+        "youhui": [{ "tupian": "../resource/img/dianpu.jpg", "text": "海澜之家优惠活动兑换券", "num": 3 },
+            { "tupian": "../resource/img/dianpuone.jpg", "text": "唐诗优惠活动兑换券", "num": 5 },
+            { "tupian": "../resource/img/chaozhitwo.jpg", "text": "SEEO优惠活动兑换券", "num": 8 }
+        ],
+        "gonggao": [{ "decoration": "荐", "text": "值了！这张3期分期优惠券免费" },
+            { "decoration": "热", "text": "买MacBook送耳机" },
+            { "decoration": "值", "text": "佳能旗舰新机，12期白条免息" },
+            { "decoration": "新", "text": "值了，这双鞋爆卖" },
+            { "decoration": "热", "text": "超值甩卖短裙" }
+        ],
+        "shangpin": [{ "tupian": "../resource/img/shangpinone.jpg", "decoration": "韩版显瘦连衣裙打底百褶裙中长款", "money": "￥148.00" },
+            { "tupian": "../resource/img/shangpintwo.jpg", "decoration": "时尚显瘦连衣裙打底百褶裙中长款", "money": "￥112.00" },
+            { "tupian": "../resource/img/shangpinthree.jpg", "decoration": "印花显瘦连衣裙打底百褶裙中长款", "money": "￥158.00" },
+            { "tupian": "../resource/img/shangpinfour.jpg", "decoration": "大牌显瘦连衣裙打底百褶裙中长款", "money": "￥136.00" }
+        ],
+        "youhuishangpin": [{ "tupian": "../resource/img/shangpinone.jpg", "decoration": "韩版显瘦连衣裙打底百褶裙中长款", "money": "￥148.00" },
+            { "tupian": "../resource/img/shangpintwo.jpg", "decoration": "时尚显瘦连衣裙打底百褶裙中长款", "money": "￥112.00" },
+            { "tupian": "../resource/img/shangpinthree.jpg", "decoration": "印花显瘦连衣裙打底百褶裙中长款", "money": "￥158.00" },
+            { "tupian": "../resource/img/shangpinfour.jpg", "decoration": "大牌显瘦连衣裙打底百褶裙中长款", "money": "￥136.00" }
+        ],
+        "mingxingdianpu": [{ "tupian": "../resource/img/dianpu.jpg", "text": "海澜之家专卖店", "num": 8.3 },
+            { "tupian": "../resource/img/dianpuone.jpg", "text": "唐诗专卖店", "num": 8.5 },
+            { "tupian": "../resource/img/chaozhitwo.jpg", "text": "SEEO专卖店", "num": 8.8 },
+            { "tupian": "../resource/img/dianpu.jpg", "text": "海澜之家专卖店", "num": 8.3 },
+            { "tupian": "../resource/img/dianpuone.jpg", "text": "唐诗专卖店", "num": 8.5 },
+            { "tupian": "../resource/img/chaozhitwo.jpg", "text": "SEEO专卖店", "num": 8.8 },
+            { "tupian": "../resource/img/dianpu.jpg", "text": "海澜之家专卖店", "num": 8.3 },
+            { "tupian": "../resource/img/dianpuone.jpg", "text": "唐诗专卖店", "num": 8.5 },
+            { "tupian": "../resource/img/chaozhitwo.jpg", "text": "SEEO专卖店", "num": 8.8 }
+        ]
+
+
+    }
 }
