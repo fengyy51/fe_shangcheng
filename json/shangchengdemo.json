@@ -14,6 +14,10 @@
 		"shangpin":[{"tupian":"../resource/img/shangpinone.jpg","decoration":"韩版显瘦连衣裙打底百褶裙中长款","money":"￥148.00"},
 					{"tupian":"../resource/img/shangpintwo.jpg","decoration":"时尚显瘦连衣裙打底百褶裙中长款","money":"￥112.00"},
 					{"tupian":"../resource/img/shangpinthree.jpg","decoration":"印花显瘦连衣裙打底百褶裙中长款","money":"￥158.00"},
+					{"tupian":"../resource/img/shangpinfour.jpg","decoration":"大牌显瘦连衣裙打底百褶裙中长款","money":"￥136.00"}],
+		"youhuishangpin":[{"tupian":"../resource/img/shangpinone.jpg","decoration":"韩版显瘦连衣裙打底百褶裙中长款","money":"￥148.00"},
+					{"tupian":"../resource/img/shangpintwo.jpg","decoration":"时尚显瘦连衣裙打底百褶裙中长款","money":"￥112.00"},
+					{"tupian":"../resource/img/shangpinthree.jpg","decoration":"印花显瘦连衣裙打底百褶裙中长款","money":"￥158.00"},
 					{"tupian":"../resource/img/shangpinfour.jpg","decoration":"大牌显瘦连衣裙打底百褶裙中长款","money":"￥136.00"}]
 	}
 }

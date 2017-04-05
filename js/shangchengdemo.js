@@ -18,12 +18,14 @@ function loadJson(){
 					var huodong=data.data.huodong;
 					var gonggao=data.data.gonggao;
 					var shangpin=data.data.shangpin;
+					var youhuishangpin=data.data.youhuishangpin;
 					var youhui=data.data.youhui;
 					// makeTitle(title);
 					makeHuoDong(huodong,huodong.length);
 					$('.huodong>.num>span').eq(0).addClass('active');
 					makeGongGao(gonggao);
-					makeShangPin(shangpin);				
+					makeShangPin(shangpin);	
+					makeYouHuiShangPin(youhuishangpin);			
 
 					$('div.youhuiquan .body').empty();
 					$.each(youhui,function(i){
@@ -101,6 +103,20 @@ function makeShangPin(shangpin) {
 	});
 	$('div.shangpin .body').html(strHtml);
 }
+function makeYouHuiShangPin(youhuishangpin) {
+	var strHtml='<div class="twocolom">';
+	$.each(youhuishangpin,function(i){
+		if(i%2==0){
+			strHtml=strHtml+'<div class="colom"><div class="colomitem">'+'<div class="tupian"><img src='+this.tupian+'></div><div class="content"><p class="decoration">'+
+				this.decoration+'</p><p class="money">'+this.money+'</p></div></div>';
+		}
+		else{
+		strHtml=strHtml+'<div class="colomitem"><div class="tupian"><img src='+this.tupian+'></div><div class="content"><p class="decoration">'+
+				this.decoration+'</p><p class="money">'+this.money+'</p></div></div></div>';
+		}
+	});
+	$('div.youhuishangpin .body').html(strHtml);
+}
 function makeYouHui(tupian,text,num){
 	var optionHtml='<div class="item"><div class="tupian"><img src='+tupian+'></div><div class="content"><p class="decoration">'+
 	text+'</p><p class="reference">免费领取</p><p class="num">已领'+num+'张</p></div></div>';
@@ -142,11 +158,15 @@ function actionHuoDong(){
 	}
 	autoplay();
 	//触摸悬停
-	$('div.guanggao').delegate("ul","touchstart",function(){
+	$('div.guanggao').delegate("ul","touchstart",function(e){
+		//防止页面整个左右摆动
+		e.preventDefault();
 		clearInterval(timer);
 	});
-	$('div.guanggao').delegate("ul","touchend",function(){
+	$('div.guanggao').delegate("ul","touchend",function(e){
 		autoplay();
+		//防止页面整个左右摆动
+		e.preventDefault();
 	});
 	//拖拽切换图片
 	$(".huodong").hover(function () {

@@ -69,7 +69,7 @@ div.huodong div.num span.active{
 div.white{
 	width: 100%;	
 	background-color:#fff;
-	margin: 2px 0 2px 0;
+	margin: 5px 0 5px 0;
 }
 div.gonggao{	
 	height: 25px; 	
@@ -87,14 +87,12 @@ div.gonggao span.shenred{
 div.gonggao span.text{
 	font-size: 15px;
 }
-div.youhuiquan {
+
+.head{
 	
-	margin: 2px 0 2px 0;
-}
- #head{
-	text-decoration: underline;
-	border: 1px solid #FAF1F1;
+	border: 1px solid #E3E5E6;
 	height: 34px;
+	margin: 2px 0 2px 0;
 }
 .left{  	
  	float: left;
@@ -106,37 +104,38 @@ div.youhuiquan {
  	float: right;
 }
 div.shangpin{
-	height: 480px;
+	height: 575px;
 }
 /* 成两列排列的格式 */
 div.twocolom div.colom{
-	margin-bottom: 0;
-	height: 222px;
+	/* border: 1px solid black; */
+	height: 265px;
 	width: 100%;
-
-	/* border: 1px solid #FAF1F1; */
+	border: 1px solid #E3E5E6;
 }
 div.twocolom div.colomitem {
 	/* border: 1px solid black; */
-	margin: 1px;
-	border: 1px solid #FAF1F1;
+	margin: 2px 2px 2px 2px;
+/* 	border: 1px solid #f1f1f1; */
 }
-div.colomitem:nth-child(0){
+div.colom :nth-child(1){
 /* 	position: relative; */
-/* 	float: left;	 */
-	width:180px;
-	/* background:#ff0000;
-	border: 1px solid black; */
+	float: left;	
+	width:182px;
+	/* border: 1px solid black; */
 }
-div.colomitem:nth-child(1){
-	float: right;
+div.colom :nth-child(2){
+	/* float: right; */
 	/* background:#0000ff; */
-	width:180px;
-	/* border: 1px solid red; */
+/* 	width:191px; */
+/* 	border: 1px solid red; */
+}
+dib.colom .tupian{
+	display: inline-block;
 }
 div.colom .tupian img{
 	width: 180px;
-	height: 130px;
+	height: 180px;
 
 }
 /* //成一列排列的格式 */
