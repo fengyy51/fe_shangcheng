@@ -51,13 +51,17 @@ function makeTitle(pageTitle){
 
 function makeHuoDong(huodong,length){
 	$('div.guanggao').empty();
-	var strHtml='<div class="huodong" ><ul class="tupian"><li><img src='+huodong[0]+'></li><li><img src='
-	+huodong[1]+'></li></ul><div class="num">';
+	var strHtml="";
+	for(var i=0;i<length;i++){
+		strHtml=strHtml+'<li><img src='+huodong[i]+'></li>';
+	}
+	
+	var strHtml=strHtml+'</ul><div class="num">';
 	for(var i=1;i<=length;i++){
 		strHtml=strHtml+'<span >'+i+'</span>';
 		// console.log(i);
 	}
-	strHtml=strHtml+'</div>'+'</div>';	
+	strHtml='<div class="huodong" ><ul class="tupian">'+strHtml+'</div>'+'</div>';	
 	$('div.guanggao').html(strHtml);
 	actionHuoDong();
 

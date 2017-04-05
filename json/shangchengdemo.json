@@ -1,7 +1,7 @@
 {
 	"data":{
 		"title":"义乌购物中心",
-		"huodong":["../resource/img/huodong.jpg","../resource/img/huodongone.jpg"],
+		"huodong":["../resource/img/huodong.jpg","../resource/img/huodongone.jpg","../resource/img/huodongtwo.jpg","../resource/img/huodongthree.jpg"],
 		"youhui":[{"tupian":"../resource/img/dianpu.jpg","text":"海澜之家优惠活动兑换券","num":3},
 				{"tupian":"../resource/img/dianpuone.jpg","text":"唐诗优惠活动兑换券","num":5},
 				{"tupian":"../resource/img/chaozhitwo.jpg","text":"SEEO优惠活动兑换券","num":8}

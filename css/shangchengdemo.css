@@ -118,6 +118,7 @@ div.twocolom div.colom{
 }
 div.twocolom div.colomitem {
 	/* border: 1px solid black; */
+	margin: 1px;
 	border: 1px solid #FAF1F1;
 }
 div.colomitem:nth-child(0){

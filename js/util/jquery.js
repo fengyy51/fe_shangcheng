@@ -65,9 +65,14 @@
 			this._view = this.opts.view;
 			this._speed = this.opts.speed;
 			this._tg = $(this);
-			this._list = this._tg.children().children();
+			// this._list = this._tg.children().children();
+			this._list=this._tg.find("img");
+			
 			this._width = parseInt(this._tg.css("width"));
 			this._item_w = parseInt(this._list.css("width"));
+
+		
+
 			this._len = this._list.length;
 			this._range = this.opts.range * this._width;
 			this._pos = [];
@@ -108,13 +113,17 @@
 				"overflow":"visible"
 			});
 			
-			if(this.opts.flexible) this._item_w = this._width / this._view;
+			// if(this.opts.flexible) this._item_w = this._width / this._view;
+			if(this.opts.flexible) this._item_w =parseInt(this._list.css("width"));
+			
+			
 			if(this.opts.roll) this._len = Math.ceil(this._len / this._view) * this._view;
 			
 			var page_gap = (this.opts.page > 1 && this.opts.page <= this._len) ? (this.opts.page - 1) * this._item_w : 0;
 			
 			for(var i=0; i<this._len; ++i) {
 				this._pos[i] = this._item_w * i - page_gap;
+				
 				this._start[i] = this._pos[i];
 				this._list.eq(i).css({
 					"float" : "none",
@@ -123,7 +132,11 @@
 					"top" : "0",
 					"left" : this._pos[i] + "px",
 					// "width" : this._item_w + "px"
+					"width" : this._item_w + "px"
 				});
+				
+				// console.log(this._list.eq(i).css("width"));
+
 				if(this.opts.supportsCssTransitions && this.opts.transition) {
 					this._list.eq(i).css({
 						"-moz-transition" : "0ms",
