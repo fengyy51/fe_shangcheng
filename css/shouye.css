@@ -1,0 +1,136 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	font-size: 12px;
+}
+body{
+	background-color: #E3E5E6;
+}
+.white{
+	width: 100%;	
+	background-color:#fff;
+	margin: 5px 0 5px 0;
+}
+.head{
+	background: url(../resource/img/shangchangbeijing.jpg) no-repeat;
+	width: 100%;
+	height: 140px;
+	color: #fff;
+	/* background-size: auto; */
+}
+.head .sousuo{
+	background: url(../resource/fonts/sousuo.png) no-repeat left top;
+	width: 300px;
+	height: 24px;
+	float: right;
+	background-color:#fff;
+	display: inline;
+	
+}
+.head .logo img{
+	position: absolute;
+	top: 80px;
+	left: 20px;	
+	width: 45px;
+}
+.head .logo span{
+	margin-bottom: 15px;
+	font-size: 23px;
+	position: absolute;
+	top: 80px;
+	left: 70px;
+}
+.daolanlogo{
+	border: 1px solid #fff;
+	width: 100%;
+	height: 42px;
+	padding: 5px 2px 5px 2px;
+	border-bottom: 1px solid #E3E5E6;
+}
+.daolanlogo .logo
+{
+	
+	float: left;
+	width: 48px;
+	margin-top: 5px;
+	margin-left: 20px;
+	text-align: center;
+}
+.daolanlogo .logo img{
+	display: block;
+	margin: 0 25% 0 25%;
+
+}
+.daolanlogo .logo span{
+	display: block;
+	
+}
+.gonggao{
+	padding: 5px 2px 5px 2px;
+}
+.gonggao .logo img{
+	width: 14px;
+	margin: 0 5px 0 5px;
+}
+.zhaodian{
+	/* margin-top: 10px; */
+	height: 130px;
+	/* padding: 5px 0 5px 0; */
+}
+.zhaodian .title{
+	font-size: 15px;
+	/* font-weight: bold; */
+/* 	width: */ 
+	height: 22px;
+	padding-top: 10px;
+	border-bottom: 1px solid #E3E5E6;
+}
+.zhaodian .content{
+
+	
+	height:70px;
+	margin: 10px 0 10px 0;
+}
+/* .zhaodian .content span.text{
+	/* height: 40px; */
+	/* display: block;
+	float: left;
+	width: 30px;
+	padding: 12px;
+	border: 1px solid #E3E5E6;
+	border-radius: 50%;
+	margin: 0 5px 0 5px;
+	color: #fff;
+} */
+/* .zhaodian .content span.text:nth-child(even){
+	background: #F6B653;
+}
+.zhaodian .content span.text:nth-child(odd){
+	background: #17D7EF;
+}  */
+.foot{
+	position: fixed;
+	bottom: 0;
+	border-top: 1px solid #E3E5E6;
+	height: 50px;
+	width: 100%;
+	margin-bottom: 0px;
+/* 	width: 100%; */
+	/* height: 42px; */
+	/* padding: 5px 2px 5px 2px; */
+}
+.foot .logo{
+	float: left;
+	width:40px;
+	height: 40px;	
+	margin: 5px 55px 0 30px;
+	text-align: center;
+}
+.foot  .logo img{
+	display: block;
+	margin: 0 25% 0 25%;
+}
+.foot .logo .text{
+	display: block;	
+}

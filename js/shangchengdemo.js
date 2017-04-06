@@ -247,25 +247,19 @@ function actionMingXingDianPu() {
         e.preventDefault();
     });
     
-    $(".mingxingdianpu").hover(function() {
-        $("#btn_prev,#btn_next").fadeIn()
-    }, function() {
-        $("#btn_prev,#btn_next").fadeOut()
-    });
+    // $(".mingxingdianpu").hover(function() {
+    //     $("#btn_prev,#btn_next").fadeIn()
+    // }, function() {
+    //     $("#btn_prev,#btn_next").fadeOut()
+    // });
    
     $(".mingxingdianpu ").touchSlider({
-        flexible: true,
-        speed: 200,
-        btn_prev: $("#btn_prev"),
-        btn_next: $("#btn_next"),
+        // flexible: false,
+        // speed: 200,
+        // btn_prev: $("#btn_prev"),
+        // btn_next: $("#btn_next"),
        
     });
 
-   $('.mingxingdianpu').delegate("div.row", "dragstart", function() {
-        $dragBln = true;
-    });   
    
-    // timer = setInterval(function() {
-    //     $('.mingxingdianpu .row').trigger("click");
-    // }, 2000)
 }
