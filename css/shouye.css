@@ -26,6 +26,7 @@ body{
 	float: right;
 	background-color:#fff;
 	display: inline;
+	font-size: 13px;
 	
 }
 .head .logo img{
@@ -89,8 +90,19 @@ body{
 .zhaodian .content{
 
 	
-	height:70px;
+	height:100px;
 	margin: 10px 0 10px 0;
+}
+.ui-slider-item{
+	height: 70px;
+	width: 70px;
+}
+.ui-slider-item img {
+ /* width:98%; *//*如果想要图片间距在大，可把百分比调小，如果不想要图片中间的间距，可把宽度调成100%*/
+  width:70px;
+  height: 70px;
+  background-color: #fff;
+  /*  background:#E7E7E7 url(../../../images/ui-slider-imgbg.png) center center no-repeat; */
 }
 /* .zhaodian .content span.text{
 	/* height: 40px; */

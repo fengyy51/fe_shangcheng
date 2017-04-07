@@ -14,6 +14,7 @@
     position: relative;
     left: 0;
     top: 0;
+    padding: 0px;
     -webkit-transform: translate3d(0, 0, 0);
     -webkit-transition-duration: 0ms;
     -webkit-animation-timing-function:ease-out;
@@ -21,16 +22,20 @@
 .ui-slider-item > a {
     display: block;
     text-decoration: none;
+    
 }
 
 .ui-slider-group {
+   
+    margin: 0px;
     height: 100%;
     float: left;
+
 }
 
 .ui-slider-item {
     width:100%;
-/*    width: 70px; */
+    height: 100%;
     background-color:   #fff;
     text-align: center;
     top:0;
@@ -39,15 +44,19 @@
 }
 
 .ui-slider-item > p {
-    position: absolute;
-    bottom: 0;
+   /*  position: absolute;
+    bottom: 0; */
     width: 100%;
-    text-align: left;
-    pointer-events: none;
-    overflow: hidden;
-    word-break: break-all;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 15px;
+   /*  pointer-events: none;元素永远不会成为鼠标事件的target */
+    /* overflow: hidden; */
+  /*   word-break: break-all; 允许在单词内换行*/
+     white-space: nowrap;/* 不换行 */
+    
+     word-break: break-all;
+     overflow: hidden;
+     text-overflow: ellipsis;
 }
 
 .ui-slider-dots {
@@ -57,7 +66,7 @@
     padding: 0 6px;
     text-align: right;
 
-    /*无文字时，居中样式*/
+    /*无文字时，居中样式
     /*width:100%;*/
     /*background: rgba(0, 0, 0, 0.5);*/
     /*text-align: center;*/

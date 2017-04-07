@@ -4,7 +4,8 @@
 
 .ui-slider-item img {
  /* width:98%; *//*如果想要图片间距在大，可把百分比调小，如果不想要图片中间的间距，可把宽度调成100%*/
-  width:70px;
+  width:96%;
+  height: 100px;
   background-color: #fff;
   /*  background:#E7E7E7 url(../../../images/ui-slider-imgbg.png) center center no-repeat; */
 }
@@ -13,7 +14,8 @@
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
     padding: 6px 0;
-    text-indent: 10px;
+    margin: 0 3px 0;
+   /*  text-indent: 10px; 首行缩进*/
 }
 
 
