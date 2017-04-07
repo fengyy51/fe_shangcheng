@@ -1,0 +1,69 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	font-size: 12px;
+}
+body{
+	background-color: #E3E5E6;
+}
+.white{
+	margin: 5px 0 5px 0;
+	background-color: #fff;
+}
+div.head{
+	padding: 5px 0;
+	border-bottom: 1px solid #989292;
+	/* position: fixed;
+	top: 0; */
+}
+/* div.head > span.shuru input{
+	height: 50%;
+	width: 80%;
+	font-size: 1.8rem;
+	background: url('../resource/fonts/sousuo.png') no-repeat top left;
+	background-position: 
+} */
+.head .sousuo{
+
+	background: url('../resource/fonts/sousuo.png') no-repeat left center;
+	width: 70%;
+	height: 25px;	
+	background-color:rgba(155,144,144,0.1);
+	display: inline;
+	font-size: 1.0rem;
+	padding-left: 25px;	
+	border:1px solid #939090 ;
+	margin-left: 10px;
+}
+.head .cancel{
+	margin-left: 15px;
+	font-size: 15px;
+
+}
+.fenlei{
+	margin-top: 8px;
+	width: 100%;
+	height: 42px;
+	padding: 5px 2px 5px 2px;
+	border-bottom: 1px solid #939090;
+}
+.fenlei .logo
+{
+	
+	float: left;
+	width: 33%;
+	/* margin-top: 5px;
+	margin-left: 20px; */
+	text-align: center;
+}
+.fenlei .logo img{
+	display: block;
+	margin: 0 25% 0 37%;
+
+}
+.fenlei .logo span{
+	display: block;
+	padding-right: 10px;
+	
+}

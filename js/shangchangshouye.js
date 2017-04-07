@@ -11,7 +11,7 @@ function init(){
 }
 function headInit(){
 	var strHtml='<span ><img src="../resource/fonts/liebiao.png">商场</span>'
-	+'<span><input class="sousuo" type="text" placeholder="  搜店/商品/优惠" ></span>'
+	+'<span><input class="sousuo" type="text" placeholder="搜店/商品/优惠" ></span>'
 	+'<span class="logo" ><img src="../resource/fonts/logo.png"><span >义乌一区商场</span></span>';	
 	$('div.head').html(strHtml);
 }
