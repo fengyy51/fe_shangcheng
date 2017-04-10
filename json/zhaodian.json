@@ -1,0 +1,16 @@
+{
+    "data": {
+        "item": [{ "logo": "../resource/fonts/餐饮美食.png", "text": "餐饮美食","page":1 },
+            { "logo": "../resource/fonts/服装服饰.png", "text": "服装服饰" ,"page":1},
+            { "logo": "../resource/fonts/休闲娱乐.png", "text": "休闲娱乐","page":1 },
+            { "logo": "../resource/fonts/母婴亲子.png", "text": "母婴亲子","page":1 },
+            { "logo": "../resource/fonts/美妆.png", "text": "美妆丽人" ,"page":1},
+            { "logo": "../resource/fonts/生活便利.png", "text": "生活便利","page":1 },
+            { "logo": "../resource/fonts/家居.png", "text": "数码家居","page":1 },
+            { "logo": "../resource/fonts/服务.png", "text": "服务配套" ,"page":1},
+            { "logo": "../resource/fonts/教育.png", "text": "教育亲子","page":2 },
+            { "logo": "../resource/fonts/其他.png", "text": "其他门店" ,"page":2}
+        ]
+
+    }
+}

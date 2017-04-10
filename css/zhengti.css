@@ -1,0 +1,13 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+}
+body{
+	background-color: #E3E5E6;
+}
+.white{
+	width: 100%;	
+	background-color:#fff;
+	margin: 5px 0 5px 0;
+}
